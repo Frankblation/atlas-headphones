@@ -1,0 +1,10 @@
+@media screen and (min-width: 1025px) {
+   
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto; /* Center aligns the container */
+    padding: 20px; /* Add padding inside the container */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
