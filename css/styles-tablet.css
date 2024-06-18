@@ -4,6 +4,10 @@
 .container {
     max-width: 1000px;
     margin: 0 auto; /* Center aligns the container */
-    padding: 20px; /* Add padding inside the container */
+    padding: 10px; /* Add padding inside the container */
     box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.body {
+    background-image: url(images/headphones_hero_1.jpg);
 }
