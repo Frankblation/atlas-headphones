@@ -1,13 +1,15 @@
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    /* Styles for tablets */
-}
+
 .container {
     max-width: 1000px;
     margin: 0 auto; /* Center aligns the container */
     padding: 10px; /* Add padding inside the container */
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    box-sizing: border-box;
 }
 
-.body {
-    background-image: url(images/headphones_hero_1.jpg);
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    /* Styles for tablets */
+
+body {
+    color: blue;
+  
 }

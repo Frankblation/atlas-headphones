@@ -1,17 +1,18 @@
-@media screen and (min-width: 1025px) {
-   
-}
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto; /* Center aligns the container */
-    padding: 20px; /* Add padding inside the container */
+.container { 
+    max-width: 1400px;
+    margin: auto; /* Center aligns the container */
+    padding: 0px; /* Add padding inside the container */
     box-sizing: border-box; /* Ensures padding and border are included in the width */
-    background-image: url(images/headphones_hero_1.jpg); /* Replace with your image path */
-    background-size: cover; /* Cover ensures the background image covers the entire container */
-    background-position: center;
+   
+    
 }
 
-.nav {
-    background-image: url();
+@media screen and (min-width: 1025px) {
+    .background {
+        background-size: cover; width:1400px; height:800px;
+    }
+    body {
+        color:rgb(45, 124, 45);
+    }
 }
