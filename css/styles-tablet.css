@@ -64,17 +64,17 @@ body {
     font-family: var(--font-family-body);
 }
 
+a:hover,
+a:active {
+    color: #FF6565; /* Change the link color on hover and active state */
+}
+
 /*main*/
 
 main {
     padding: 10px; 
     color: var(--text-color);
     margin-top: 30%;
-}
-
-a:hover,
-a:active {
-    color: #FF6565; /* Change the link color on hover and active state */
 }
 
 
