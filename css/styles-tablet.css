@@ -1,31 +1,35 @@
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('fonts/source-sans-pro.woff2') format('woff2'), /* Update with the path to your font file */
-         url('fonts/source-sans-pro.woff') format('woff'); /* Add additional formats if needed */
-    /* Add other font properties if necessary */
+    src: url('fonts/source-sans-pro.woff2') format('woff2'), 
+         url('fonts/source-sans-pro.woff') format('woff'); 
 }
 
 @font-face {
     font-family: 'Spin Cycle';
-    src: url('fonts/spin-cycle.woff2') format('woff2'), /* Update with the path to your font file */
-         url('fonts/spin-cycle.woff') format('woff'); /* Add additional formats if needed */
-    /* Add other font properties if necessary */
+    src: url('fonts/spin-cycle.woff2') format('woff2'), 
+         url('fonts/spin-cycle.woff') format('woff'); 
 }
+
+:root {
+    --text-color: #FFF;
+    --font-family-body: 'Source Sans Pro', sans-serif;
+    --color-primary: #FF6565;
+  }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--text-color);
 }
 
 .container {
     max-width: 1400px;
-    margin: 0 auto; /* Center aligns the container */
-    padding: 10px; /* Add padding inside the container */
-    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px; 
+   
 }
 
 .background {
-    height: 200px; /* Default height for non-tablet sizes */
     background-size: cover;
     background-position: center;
 }
@@ -57,12 +61,15 @@ body {
 .headerlinks a {
     color: white;
     text-decoration: none;
+    font-family: var(--font-family-body);
 }
 
 /*main*/
 
 main {
-    padding: 10px; /* Default padding for non-tablet sizes */
+    padding: 10px; 
+    color: var(--text-color);
+    margin-top: 30%;
 }
 
 a:hover,
@@ -70,39 +77,70 @@ a:active {
     color: #FF6565; /* Change the link color on hover and active state */
 }
 
-footer {
-    text-align: center;
-    padding: 10px; /* Default padding for non-tablet sizes */
-    background-color: #f1f1f1;
-}
 
-/* Styles for tablets (min-width: 481px and max-width: 1024px) */
+
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-    body {
-        color: blue;
-    }
 
-    .container {
-        padding: 20px; /* Adjust padding for tablets */
-    }
 
     .background {
-        height: 300px; /* Adjust height for tablets */
-    }
+        background-size: cover;
+        background-position: center;
+      }
+      
 
     .header {
-        padding: 15px; /* Adjust padding for tablets */
+        padding: 15px; 
     }
 
     .headerlinks li {
-        margin: 0 10px; /* Adjust margin for tablets */
+        margin: 0 10px;
+        
     }
-
-    main {
-        padding: 20px; /* Adjust padding for tablets */
+    
+    .content .h1 {
+    justify-content: center;
+    color: var(--text-color);
+    text-align: center;
+    font-family: var(--font-family-body);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 20%;
     }
+    
+    .inner-header p {
+    color: var(--text-color);
+    font-family: var(--font-family-body);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
 
-    footer {
-        padding: 20px; /* Adjust padding for tablets */
+    }
+    
+    .hero-text p {
+    color: var(--text-color);
+    font-family: var(--font-family-body);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 10%;
+    }
+    
+    .custom-button {
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    border-radius: 22px;
+    background: #FF6565;
+    width: 162px;
+    height: 44px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 40%;
     }
 }
