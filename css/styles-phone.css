@@ -1,24 +1,96 @@
-.container {
-    max-width: 1400px;
-    margin: 0 auto; /* Center aligns the container */
-    padding: 0px; /* Add padding inside the container */
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro.woff2') format('woff2'), /* Update with the path to your font file */
+         url('fonts/source-sans-pro.woff') format('woff'); /* Add additional formats if needed */
+    /* Add other font properties if necessary */
 }
 
-@media screen and (max-width: 480px) {
-    /* `Styles for phones */
-
-    .background {
-    background: #071629;
-    border: 2px solid black;
-    background-repeat: no-repeat;
-    background-size:300%; width: 480px; height: 869px;
-    margin-right: 180px;
+@font-face {
+    font-family: 'Spin Cycle';
+    src: url('fonts/spin-cycle.woff2') format('woff2'), /* Update with the path to your font file */
+         url('fonts/spin-cycle.woff') format('woff'); /* Add additional formats if needed */
+    /* Add other font properties if necessary */
 }
-
 
 body {
-    color: red;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+.container {
+    padding: 10px;
 }
+
+.background {
+    height: 700px;
+    background-position: center center;
+    background-position: 35% 50%; /* Adjust values as needed to shift */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    position: relative;
+}
+
+.header a {
+    margin: 0;
+    text-align: center;
+    flex: 1; 
+    size-adjust: 20%;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+}
+
+.headerlinks ul {
+    list-style-type: none;
+    padding: 0;
+    display: none; /* Hide the menu initially */
+    position: absolute;
+    top: 50px; /* Adjust position below the header */
+    left: 10px; /* Align with the left padding of the container */
+    width: calc(100% - 20px); /* Full width minus padding */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 1;
+}
+
+.headerlinks li {
+    margin: 10px 0; /* Adjust spacing between menu items */
+}
+
+.headerlinks a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Toggle menu visibility when the checkbox is checked */
+.menu-toggle:checked + .menu-icon + .headerlinks ul {
+    display: block;
+}
+
+main {
+    padding: 10px;  
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+

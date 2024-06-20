@@ -1,39 +1,85 @@
-:root {
-    --text-color: #FFF;
-    --font-family-body: 'Source Sans Pro', sans-serif;
-    --color-primary: #FF6565;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  } */
-  
-  a:hover,
-  a:active {
-    color: var(--color-primary);
-  }
-  
-  button:hover,
-  button:active {
-    opacity: 0.9;
-  }
-  
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro.woff2') format('woff2'), /* Update with the path to your font file */
+         url('fonts/source-sans-pro.woff') format('woff'); /* Add additional formats if needed */
+    /* Add other font properties if necessary */
+}
+
+@font-face {
+    font-family: 'Spin Cycle';
+    src: url('fonts/spin-cycle.woff2') format('woff2'), /* Update with the path to your font file */
+         url('fonts/spin-cycle.woff') format('woff'); /* Add additional formats if needed */
+    /* Add other font properties if necessary */
+}
+
+/* styles-desktop.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 30px;
+}
+
+.background {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.headerlinks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.headerlinks li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.headerlinks a {
+  color: white;
+  text-decoration: none;
+}
+/***main***/
+
+main {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: ;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+}
+
+.custom-button {
 
 
-    
+}
+button:hover,
+button:active {
+    opacity: 0.9; /* Change the button opacity on hover and active state */
+}
 
-@media screen and (min-width: 1025px) {
-    .background {
-        background: #071629;
-        background-size: cover; width:1400px; height:800px;
-    }
-    body {
-        color:rgb(45, 124, 45);
-    }
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #f1f1f1;
 }
