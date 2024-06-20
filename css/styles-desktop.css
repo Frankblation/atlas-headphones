@@ -1,15 +1,36 @@
+:root {
+    --text-color: #FFF;
+    --font-family-body: 'Source Sans Pro', sans-serif;
+    --color-primary: #FF6565;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  } */
+  
+  a:hover,
+  a:active {
+    color: var(--color-primary);
+  }
+  
+  button:hover,
+  button:active {
+    opacity: 0.9;
+  }
+  
 
-.container { 
-    max-width: 1400px;
-    margin: auto; /* Center aligns the container */
-    padding: 0px; /* Add padding inside the container */
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
-   
+
     
-}
 
 @media screen and (min-width: 1025px) {
     .background {
+        background: #071629;
         background-size: cover; width:1400px; height:800px;
     }
     body {
